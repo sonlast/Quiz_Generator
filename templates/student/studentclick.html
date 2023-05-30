@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <style media="screen">
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  {% include "quiz/navbar.html" %}
+  <br><br>
+  <div style="font-family: 'Braah One', sans-serif" class="jumbotron" style="margin-bottom:0px">
+    <h1 class="display-4">Hello, Student</h1>
+    <p class="lead">Welcome to QuizCraft</p>
+    <hr class="my-4">
+    <p>Once you have logged in, a range of features become available for you to access.</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="studentsignup" role="button" style="color: white; background-color: #4b0fb0">Create Account</a>
+      <a class="btn btn-primary btn-lg" href="studentlogin" role="button" style="color: white; background-color: #4b0fb0">Login</a>
+    </p>
+    <br><br><br><br><br><br>
+  </div>
+ 
+  {% include "quiz/footer.html" %}
+</body>
+
+</html>

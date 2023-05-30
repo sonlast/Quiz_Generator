@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes">
+<style>
+  .jumbotron{
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+</style>
+</head>
+<body>
+  {% include "quiz/navbar.html" %}
+<br>
+<section id="section-jumbotron" class="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center">
+  <div style="font-family: 'Braah One', sans-serif" class="container text-center">
+    <p class="display-3 d-none d-sm-block">QuizCraft.</p>
+    <p class="lead">We organize the quizzes and disseminate it.</p>
+
+    
+
+    <p class="lead">Sign up as a professor or student if you haven't already, and get access to your quizzes or the quizzes your professors created for you.</p>
+    <p><strong> Begin your adventure from this point:</strong></p>
+    <a href="/student/studentsignup" class="btn btn-lg" style="color: white; padding-right: 35px; background-color: #4b0fb0"><i class="fa fa-user-plus" aria-hidden="true"></i> Sign Up</a>
+    
+    <br><br><br>
+  </div>  
+</section>
+  {% include "quiz/footer.html" %}
+
+
+</body>
+
+</html>
